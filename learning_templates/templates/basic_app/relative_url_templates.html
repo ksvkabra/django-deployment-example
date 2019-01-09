@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+	<h1>WELCOME TO RELATIVE URL TEMPLATES</h1>
+	<a href="{% url 'basic_app:other' %}">the other page</a>
+	<a href="{% url 'admin:index' %}">the admin page</a>
+	<a href="{% url 'index' %}">the index page</a>
+	{% block body_block %}
+		<p>nothing inherited from this line</p>
+	{% endblock %}
+</body>
+</html>
